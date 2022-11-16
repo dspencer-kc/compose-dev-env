@@ -80,7 +80,7 @@ func prepare() error {
 	}
 
 	for i := 0; i < 5; i++ {
-		if _, err := db.Exec("INSERT INTO blog (title) VALUES (?);", fmt.Sprintf("Blog post #%d", i)); err != nil {
+		if _, err := db.Exec("INSERT INTO blog (title) VALUES (?);", fmt.Sprintf("Blog post hello world #%d", i)); err != nil {
 			return err
 		}
 	}
